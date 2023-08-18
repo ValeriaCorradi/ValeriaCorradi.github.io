@@ -2,8 +2,8 @@ $background: #1e1e1e;
 $mild: #737373;
 
 @font-face {    
-    font-family: wargika;
-    src: url("wargika.otf") format("opentype");
+    font-family: "wargika";
+    src: url("../../wargika.otf") format("opentype");
 }
 
 * { 
@@ -19,7 +19,7 @@ $mild: #737373;
 h1 {
   color:white;
   font-size: 40px;
-  font-family: wargika;
+  font-family: "wargika";
   font-weight: 400;
   line-height: 48px;
   word-wrap: break-word;
