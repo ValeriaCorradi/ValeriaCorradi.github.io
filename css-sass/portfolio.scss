@@ -7,6 +7,12 @@ $mild: #737373;
   background-color: $background;
 }
 
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+  cursor: pointer;
+}
+
 .main {
   margin-top: 40px;
   margin-left: 24px;
