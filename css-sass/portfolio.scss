@@ -150,15 +150,16 @@ margin-left: -160px;
   width: 100%;
 }
 
-/* Style inputs, select elements and textareas */
-input[type=text], select, textarea {
+/* Style inputs and textareas */
+input[type=text], textarea {
   width: 100%;
   padding: 12px;
-  border: none;
-  background-color: white;
+  border: 0.5px solid white;
+  border-radius: 0px;
+  background-color: $background;
   box-sizing: border-box;
   resize: vertical;
-  color: $background;
+  color: white;
   font-family: Text Me One;
   font-size: 14px;
   font-weight: 400;
