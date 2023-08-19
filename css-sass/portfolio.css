@@ -3,9 +3,13 @@
 }
 
 a {
-  color: inherit; /* blue colors for links too */
-  text-decoration: inherit; /* no underline */
+  color: inherit;
+  text-decoration: inherit;
   cursor: pointer;
+}
+
+a:act {
+  text-decoration: underline;
 }
 
 .main {
@@ -84,12 +88,12 @@ p {
   background: none;
 }
 
-.paragraph {
+.paragraph, .subtitle {
   display: block;
   position: static;
   background: none;
-  margin-top: 80px;
-  margin-bottom: 40px;
+  margin-top: 40px;
+  margin-bottom: 24px;
 }
 
 .container {
@@ -98,6 +102,11 @@ p {
   background: none;
   align-items: center;
   top: 40px;
+  width: 80%;
+}
+
+.contact-form {
+  width: 100%;
 }
 
 /* Style inputs, select elements and textareas */
@@ -128,7 +137,7 @@ input[type=submit] {
   font-weight: 400;
   background-color: #1e1e1e;
   padding: 12px 20px;
-  border: 0, 5px solid white;
+  border: 0.5px solid white;
   cursor: pointer;
   float: right;
 }
@@ -141,14 +150,14 @@ input[type=submit]:act {
 .col-25 {
   float: left;
   width: 25%;
-  margin-top: 6px;
+  margin-top: 8px;
 }
 
 /* Floating column for inputs: 75% width */
 .col-75 {
   float: left;
   width: 75%;
-  margin-top: 6px;
+  margin-top: 8px;
 }
 
 .row {
@@ -156,6 +165,7 @@ input[type=submit]:act {
   font-family: Text Me One;
   font-size: 14px;
   font-weight: 400;
+  margin-bottom: 16px;
 }
 
 ::-moz-placeholder {
@@ -179,11 +189,30 @@ input[type=submit]:act {
   clear: both;
 }
 
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+/* when the screen is between 600 - 992 px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px), (min-width: 992px) {
   .col-25, .col-75, input[type=submit] {
     width: 100%;
     margin-top: 0;
+  }
+}
+/* when the screen is more than 992px wide, make paragraph and contact form stack next to each other instead of next to each other */
+@media screen and (min-width: 992px) {
+  .container {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    gap: 160px;
+  }
+  .paragraph, .contact-form {
+    width: 30%;
+  }
+  .contact-form {
+    border: 0.5px solid white;
+    box-shadow: 3px 3px 6px 0px rgba(255, 255, 255, 0.25);
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 24px;
   }
 }
 .social {
