@@ -72,6 +72,29 @@ p {
   white-space: nowrap;
 }
 
+.menu-item-container2 {
+  bottom: 24px;
+  left: 40px;
+  position: absolute;
+  display: flex;
+  align-self: flex-end;
+  background: transparent;
+}
+
+.menu-item2 {
+  font-size: 12px;
+  transform: rotate(270deg);
+  width: 1px;
+  overflow-x: visible;
+  white-space: nowrap;
+}
+
+/* when the screen is more than 992 px wide, make the menu-item-container2 disappear */
+@media screen and (min-width: 992px) {
+  .menu-item2 p {
+    color: #1e1e1e;
+  }
+}
 .thumbnail {
   width: 128px;
   height: 256px;
@@ -189,8 +212,8 @@ input[type=submit]:act {
   clear: both;
 }
 
-/* when the screen is between 600 - 992 px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px), (min-width: 992px) {
+/* when the screen is between 576 - 992 px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 576px), (min-width: 992px) {
   .col-25, .col-75, input[type=submit] {
     width: 100%;
     margin-top: 0;
