@@ -167,6 +167,7 @@ label {
 
 /* Style the submit button */
 input[type=submit] {
+  width: 75%;
   color: white;
   font-family: Text Me One;
   font-size: 14px;
