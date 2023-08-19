@@ -154,14 +154,14 @@ input[type=submit]:act {
 .col-25 {
   float: left;
   width: 25%;
-  margin-top: 6px;
+  margin-top: 8px;
 }
 
 /* Floating column for inputs: 75% width */
 .col-75 {
   float: left;
   width: 75%;
-  margin-top: 6px;
+  margin-top: 8px;
   }
 
 .row {
@@ -169,6 +169,7 @@ input[type=submit]:act {
   font-family: Text Me One;
   font-size: 14px;
   font-weight: 400;
+  margin-bottom: 24px;
 }
 
 ::placeholder {
