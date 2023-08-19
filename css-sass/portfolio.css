@@ -8,7 +8,7 @@ a {
   cursor: pointer;
 }
 
-a:act {
+a:hover {
   text-decoration: underline;
 }
 
@@ -26,8 +26,9 @@ h1 {
   line-height: 48px;
   word-wrap: break-word;
   margin-left: -112px;
-  margin-top: 160px;
+  align-self: end;
   background: none;
+  margin-bottom: 0;
 }
 
 h2 {
@@ -111,6 +112,18 @@ p {
   background: none;
 }
 
+/* when the screen is more than 1200 px wide, make the images bigger */
+@media screen and (min-width: 1200px) {
+  .thumbnail-container img {
+    width: -moz-max-content;
+    width: max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  h1 {
+    margin-left: -160px;
+  }
+}
 .paragraph, .subtitle {
   display: block;
   position: static;
@@ -225,17 +238,24 @@ input[type=submit]:act {
     width: 100%;
     flex-direction: row;
     justify-content: center;
-    gap: 160px;
+    gap: 80px;
   }
-  .paragraph, .contact-form {
-    width: 30%;
+  .paragraph {
+    width: 40%;
   }
   .contact-form {
+    width: 30%;
     border: 0.5px solid white;
     box-shadow: 3px 3px 6px 0px rgba(255, 255, 255, 0.25);
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 24px;
+  }
+}
+/* when the screen is more than 1200px wide, gap between paragraph ad form larger */
+@media screen and (min-width: 1200px) {
+  .container {
+    gap: 160px;
   }
 }
 .social {
