@@ -12,11 +12,6 @@ a {
   cursor: pointer;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
-
 .main {
   margin-top: 40px;
   margin-left: 24px;
@@ -34,6 +29,10 @@ h1 {
   align-self: end;
   background: none;
   margin-bottom:0;
+}
+
+h1:hover {
+  font-size: 52px ;
 }
 
 h2 {
@@ -75,6 +74,10 @@ p {
   width: 1px;
   overflow-x: visible;
   white-space: nowrap;
+}
+
+.menu-item :hover {
+  text-decoration: underline;
 }
 
 .menu-item-container2 {
@@ -156,7 +159,7 @@ input[type=text], textarea {
   padding: 12px;
   border: 0.5px solid white;
   border-radius: 0px;
-  background-color: $background;
+  background-color: transparent;
   box-sizing: border-box;
   resize: vertical;
   color: white;
@@ -185,7 +188,7 @@ input[type=submit] {
   float: right;
 }
 
-input[type=submit]:act {
+input[type=submit]:hover {
   box-shadow: 3px 3px 6px 0px rgba(255, 255, 255, 0.25);
 }
 
@@ -274,4 +277,9 @@ input[type=submit]:act {
 
 .social-icon {
   align-self: flex-end;
+  border-radius: 40px;
+}
+
+.social-icon:hover {
+  box-shadow: 3px 3px 6px 0px rgba(255, 255, 255, 0.25);
 }
