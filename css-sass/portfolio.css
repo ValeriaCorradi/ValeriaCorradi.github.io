@@ -43,6 +43,7 @@ h2 {
 }
 h2.me {
   position: absolute;
+  z-index: 1000;
 }
 
 p {

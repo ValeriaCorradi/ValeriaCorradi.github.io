@@ -38,7 +38,9 @@ h1:hover {
 h2 {
   &.me {
     position: absolute;
+    z-index:1000;
   }
+  
   min-width: fit-content;
   color: white;
   font-size: 18px;
