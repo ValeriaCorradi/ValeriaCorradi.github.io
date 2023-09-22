@@ -243,7 +243,7 @@ input[type=submit]:hover {
   clear: both;
 }
 
-/* when the screen is between 576 - 992 px wide, make the two columns stack on top of each other instead of next to each other */
+/* when the screen is between 576 - 992 px wide, make the two columns of the form stack on top of each other instead of next to each other */
 @media screen and (max-width: 576px), (min-width: 992px) {
   .col-25, .col-75, input[type=submit] {
     width: 100%;
