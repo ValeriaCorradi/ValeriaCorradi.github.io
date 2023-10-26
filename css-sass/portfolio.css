@@ -6,6 +6,12 @@ a {
   color: inherit;
   text-decoration: inherit;
   cursor: pointer;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.social a{
+  margin:0px;
 }
 
 .main {
@@ -39,8 +45,9 @@ h2 {
   font-family: wargika;
   font-weight: 400;
   word-wrap: break-word;
-  margin: 0px;
+  margin:0px;
 }
+
 h2.me {
   position: absolute;
   z-index: 1000;
@@ -106,8 +113,6 @@ p {
 .thumbnail-container {
   display: flex;
   width: 200px;
-  margin-top: 160px;
-  margin-bottom: 80px;
   background: none;
 }
 
