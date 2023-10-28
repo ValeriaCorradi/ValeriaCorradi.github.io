@@ -6,13 +6,13 @@ a {
   color: inherit;
   text-decoration: inherit;
   cursor: pointer;
+  margin: 0px;
+}
+
+.thumbnail-link {
   margin-top: 80px;
   margin-bottom: 80px;
   margin-left: 40px;
-}
-
-.social a{
-  margin:0px;
 }
 
 .main {
@@ -42,7 +42,7 @@ h2 {
   min-width: -moz-fit-content;
   min-width: fit-content;
   color: white;
-  font-size: 18px;
+  font-size: 24px;
   font-family: wargika;
   font-weight: 400;
   word-wrap: break-word;
