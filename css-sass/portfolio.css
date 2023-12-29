@@ -6,13 +6,6 @@ a {
   color: inherit;
   text-decoration: inherit;
   cursor: pointer;
-  margin: 0px;
-}
-
-.thumbnail-link {
-  margin-top: 80px;
-  margin-bottom: 80px;
-  margin-left: 40px;
 }
 
 .main {
@@ -42,13 +35,12 @@ h2 {
   min-width: -moz-fit-content;
   min-width: fit-content;
   color: white;
-  font-size: 24px;
+  font-size: 18px;
   font-family: wargika;
   font-weight: 400;
   word-wrap: break-word;
-  margin:0px;
+  margin: 0px;
 }
-
 h2.me {
   position: absolute;
   z-index: 1000;
@@ -103,6 +95,12 @@ p {
   white-space: nowrap;
 }
 
+/* when the screen is more than 992 px wide, make the menu-item-container2 disappear */
+@media screen and (min-width: 992px) {
+  .menu-item2 p {
+    color: #1e1e1e;
+  }
+}
 .thumbnail {
   width: 128px;
   height: 256px;
@@ -114,6 +112,8 @@ p {
 .thumbnail-container {
   display: flex;
   width: 200px;
+  margin-top: 160px;
+  margin-bottom: 80px;
   background: none;
 }
 
@@ -140,7 +140,6 @@ p {
     margin-left: -160px;
   }
 }
-
 .paragraph, .subtitle {
   display: block;
   position: static;
@@ -294,4 +293,13 @@ input[type=submit]:hover {
 
 .social-icon:hover {
   box-shadow: 3px 3px 6px 0px rgba(255, 255, 255, 0.25);
+}
+
+footer p {
+  color: #737373;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=portfolio.css.map */

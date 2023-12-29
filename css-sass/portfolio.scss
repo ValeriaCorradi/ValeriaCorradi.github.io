@@ -295,3 +295,12 @@ input[type=submit]:hover {
 .social-icon:hover {
   box-shadow: 3px 3px 6px 0px rgba(255, 255, 255, 0.25);
 }
+
+footer p {
+  color: $mild;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
