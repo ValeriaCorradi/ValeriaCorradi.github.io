@@ -2,7 +2,7 @@ $background: #1e1e1e;
 $mild: #737373;
 
 
-* { 
+* {
   background-color: $background;
 }
 
@@ -19,7 +19,7 @@ a {
 }
 
 h1 {
-  color:white;
+  color: white;
   font-size: 40px;
   font-family: "wargika";
   font-weight: 400;
@@ -28,19 +28,19 @@ h1 {
   margin-left: -112px;
   align-self: end;
   background: none;
-  margin-bottom:0;
+  margin-bottom: 0;
 }
 
 h1:hover {
-  font-size: 52px ;
+  font-size: 52px;
 }
 
 h2 {
   &.me {
     position: absolute;
-    z-index:1000;
+    z-index: 1000;
   }
-  
+
   min-width: fit-content;
   color: white;
   font-size: 18px;
@@ -51,7 +51,7 @@ h2 {
 }
 
 p {
-  margin:0px;
+  margin: 0px;
   color: white;
   font-family: Text Me One;
   font-size: 14px;
@@ -85,7 +85,7 @@ p {
 .menu-item-container2 {
   bottom: 24px;
   left: 40px;
-  position:absolute;
+  position: absolute;
   display: flex;
   align-self: flex-end;
   background: transparent;
@@ -101,7 +101,7 @@ p {
 
 /* when the screen is more than 992 px wide, make the menu-item-container2 disappear */
 @media screen and (min-width: 992px) {
-  .menu-item2 p{
+  .menu-item2 p {
     color: $background;
   }
 }
@@ -110,7 +110,7 @@ p {
   width: 128px;
   height: 256px;
   object-fit: cover;
-  background-color:#1e1e1e;
+  background-color: #1e1e1e;
 }
 
 .thumbnail-container {
@@ -122,11 +122,11 @@ p {
 }
 
 .external-link {
-  display:inline-flex;
-  position:absolute;
-  padding-top:40px;
+  display: inline-flex;
+  position: absolute;
+  padding-top: 40px;
   height: 16px;
-  object-fit:cover;
+  object-fit: cover;
   background: none;
   justify-content: flex-end;
 }
@@ -134,31 +134,33 @@ p {
 /* when the screen is more than 1200 px wide, make the images bigger */
 @media screen and (min-width: 1200px) {
   .thumbnail-container .thumbnail {
-    width:max-content;
-    height:max-content;
-  } 
+    width: max-content;
+    height: max-content;
+  }
+
   h1 {
-margin-left: -160px;
+    margin-left: -160px;
   }
 }
 
 //ABOUT & CONTACT
 
-.paragraph, .subtitle {
+.paragraph,
+.subtitle {
   display: block;
-  position:static;
+  position: static;
   background: none;
   margin-top: 40px;
   margin-bottom: 24px;
 }
 
 .container {
-  display:flex;
+  display: flex;
   flex-direction: column;
   background: none;
   align-items: center;
-  top:40px;
-  width:80%;
+  top: 40px;
+  width: 80%;
 }
 
 .contact-form {
@@ -166,7 +168,8 @@ margin-left: -160px;
 }
 
 /* Style inputs and textareas */
-input[type=text], textarea {
+input[type=text],
+textarea {
   width: 100%;
   padding: 12px;
   border: 0.5px solid white;
@@ -195,7 +198,7 @@ input[type=submit] {
   font-weight: 400;
   background-color: $background;
   padding: 12px 20px;
-  border: 0.5px solid white;  
+  border: 0.5px solid white;
   cursor: pointer;
   float: right;
 }
@@ -217,14 +220,14 @@ input[type=submit]:hover {
   float: left;
   width: 75%;
   margin-top: 8px;
-  }
+}
 
 .row {
   color: white;
   font-family: Text Me One;
   font-size: 14px;
   font-weight: 400;
-  margin-bottom:16px;
+  margin-bottom: 16px;
 }
 
 ::placeholder {
@@ -242,8 +245,12 @@ input[type=submit]:hover {
 }
 
 /* when the screen is between 576 - 992 px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 576px), (min-width: 992px) {
-  .col-25, .col-75, input[type=submit] {
+@media screen and (max-width: 576px),
+(min-width: 992px) {
+
+  .col-25,
+  .col-75,
+  input[type=submit] {
     width: 100%;
     margin-top: 0;
   }
@@ -254,19 +261,21 @@ input[type=submit]:hover {
   .container {
     width: 100%;
     flex-direction: row;
-    justify-content:center;
+    justify-content: center;
     gap: 80px;
   }
+
   .paragraph {
     width: 40%;
   }
+
   .contact-form {
-    width:30%;
+    width: 30%;
     border: 0.5px solid white;
     box-shadow: 3px 3px 6px 0px rgba(255, 255, 255, 0.25);
-    padding-left:40px;
-    padding-right:40px;
-    padding-bottom:24px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 24px;
   }
 }
 
