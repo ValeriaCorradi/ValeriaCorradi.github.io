@@ -140,7 +140,8 @@ p {
     margin-left: -160px;
   }
 }
-.paragraph, .subtitle {
+.paragraph,
+.subtitle {
   display: block;
   position: static;
   background: none;
@@ -162,7 +163,8 @@ p {
 }
 
 /* Style inputs and textareas */
-input[type=text], textarea {
+input[type=text],
+textarea {
   width: 100%;
   padding: 12px;
   border: 0.5px solid white;
@@ -245,7 +247,9 @@ input[type=submit]:hover {
 
 /* when the screen is between 576 - 992 px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 576px), (min-width: 992px) {
-  .col-25, .col-75, input[type=submit] {
+  .col-25,
+  .col-75,
+  input[type=submit] {
     width: 100%;
     margin-top: 0;
   }
