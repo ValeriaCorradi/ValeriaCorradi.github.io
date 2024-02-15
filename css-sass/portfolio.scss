@@ -135,6 +135,10 @@ p {
   justify-content: flex-end;
 }
 
+.thumbnail-link:hover {
+  text-decoration: none;
+}
+
 /* when the screen is more than 1200 px wide, make the images bigger */
 @media screen and (min-width: 1200px) {
   .thumbnail-container .thumbnail {
