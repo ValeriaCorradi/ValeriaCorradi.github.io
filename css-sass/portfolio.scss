@@ -12,6 +12,14 @@ a {
   cursor: pointer;
 }
 
+.external {
+  font-weight: bolder;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 .main {
   margin-top: 40px;
   margin-left: 24px;
@@ -76,10 +84,6 @@ p {
   width: 1px;
   overflow-x: visible;
   white-space: nowrap;
-}
-
-.menu-item :hover {
-  text-decoration: underline;
 }
 
 .menu-item-container2 {
