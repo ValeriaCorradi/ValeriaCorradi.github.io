@@ -99,12 +99,6 @@ p {
   white-space: nowrap;
 }
 
-/* when the screen is more than 992 px wide, make the menu-item-container2 disappear */
-@media screen and (min-width: 992px) {
-  .menu-item2 p {
-    color: #1e1e1e;
-  }
-}
 .thumbnail {
   width: 128px;
   height: 256px;
