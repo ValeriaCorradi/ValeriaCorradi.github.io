@@ -1,5 +1,6 @@
 * {
   background-color: #1e1e1e;
+  color: white;
 }
 
 a {
@@ -21,17 +22,19 @@ a:hover {
   margin-right: 24px;
 }
 
-h1 {
-  color: white;
-  font-size: 40px;
+h1,
+h2 {
   font-family: Londrina Solid;
   font-weight: 400;
+  margin: 0px;
+}
+
+h1 {
+  font-size: 40px;
   line-height: 48px;
-  word-wrap: break-word;
-  margin-left: -112px;
   align-self: end;
   background: none;
-  margin-bottom: 0;
+  margin-left: -112px;
 }
 
 h1:hover {
@@ -41,12 +44,7 @@ h1:hover {
 h2 {
   min-width: -moz-fit-content;
   min-width: fit-content;
-  color: white;
   font-size: 18px;
-  font-family: Londrina Solid;
-  font-weight: 400;
-  word-wrap: break-word;
-  margin: 0px;
 }
 h2.me {
   position: absolute;
@@ -55,47 +53,45 @@ h2.me {
 
 p {
   margin: 0px;
-  color: white;
   font-family: Bricolage Grotesque;
   font-size: 14px;
-  font-weight: 400;
-  background: none;
+}
+
+.menu-item-container,
+.menu-item-container2 {
+  display: flex;
+  justify-content: flex-end;
+  align-self: flex-end;
+  background: transparent;
 }
 
 .menu-item-container {
   top: 40px;
   right: 24px;
   position: sticky;
-  display: flex;
-  justify-content: flex-end;
-  background: transparent;
-}
-
-.menu-item {
-  font-size: 12px;
-  transform-origin: top left;
-  position: sticky;
-  transform: rotate(90deg);
-  width: 1px;
-  overflow-x: visible;
-  white-space: nowrap;
 }
 
 .menu-item-container2 {
   bottom: 24px;
   left: 40px;
   position: absolute;
-  display: flex;
-  align-self: flex-end;
-  background: transparent;
 }
 
+.menu-item,
 .menu-item2 {
-  font-size: 12px;
-  transform: rotate(270deg);
   width: 1px;
   overflow-x: visible;
   white-space: nowrap;
+}
+
+.menu-item {
+  transform-origin: top left;
+  position: sticky;
+  transform: rotate(90deg);
+}
+
+.menu-item2 {
+  transform: rotate(270deg);
 }
 
 .thumbnail {
@@ -103,16 +99,14 @@ p {
   height: 256px;
   -o-object-fit: cover;
      object-fit: cover;
-  background-color: #1e1e1e;
   border-radius: 2rem;
 }
 
 .thumbnail-container {
   display: flex;
   width: 200px;
-  margin-top: 160px;
-  margin-bottom: 80px;
-  background: none;
+  margin-top: 120px;
+  margin-bottom: 64px;
 }
 
 .external-link {
@@ -120,10 +114,7 @@ p {
   position: absolute;
   padding-top: 40px;
   height: 16px;
-  -o-object-fit: cover;
-     object-fit: cover;
   background: none;
-  justify-content: flex-end;
 }
 
 .thumbnail-link:hover {
@@ -164,7 +155,7 @@ p {
   width: 100%;
 }
 
-.input-container {
+.form-container {
   border-radius: 2rem;
   border: 0.5px solid #FF00D6;
   box-shadow: 3px 3px 6px 0px rgba(255, 0, 214, 0.25);
@@ -183,7 +174,6 @@ textarea {
   background-color: transparent;
   box-sizing: border-box;
   resize: vertical;
-  color: white;
   font-family: Bricolage Grotesque;
   font-size: 14px;
   font-weight: 400;
@@ -214,22 +204,21 @@ input[type=submit]:hover {
   background-color: #FF00D6;
 }
 
-/* Floating column for labels: 25% width */
-.col-25 {
+/* Floating column for labels */
+.label-container {
   float: left;
   width: 25%;
   margin-top: 8px;
 }
 
-/* Floating column for inputs: 75% width */
-.col-75 {
+/* Floating column for inputs */
+.input-container {
   float: left;
   width: 75%;
   margin-top: 8px;
 }
 
 .row {
-  color: white;
   font-family: Bricolage Grotesque;
   font-size: 14px;
   font-weight: 400;
@@ -240,14 +229,12 @@ input[type=submit]:hover {
   color: #737373;
   font-family: Bricolage Grotesque;
   font-size: 14px;
-  font-weight: 400;
 }
 
 ::placeholder {
   color: #737373;
   font-family: Bricolage Grotesque;
   font-size: 14px;
-  font-weight: 400;
 }
 
 /* Clear floats after the columns */
@@ -259,8 +246,8 @@ input[type=submit]:hover {
 
 /* when the screen is between 576 - 992 px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 576px), (min-width: 992px) {
-  .col-25,
-  .col-75,
+  .label-container,
+  .input-container,
   input[type=submit] {
     width: 100%;
     margin-top: 0;
