@@ -5,7 +5,6 @@
 a {
   color: inherit;
   text-decoration: inherit;
-  cursor: pointer;
 }
 
 .external {
@@ -13,7 +12,7 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
+  color: #FF00D6;
 }
 
 .main {
@@ -25,7 +24,7 @@ a:hover {
 h1 {
   color: white;
   font-size: 40px;
-  font-family: "wargika";
+  font-family: Londrina Solid;
   font-weight: 400;
   line-height: 48px;
   word-wrap: break-word;
@@ -44,7 +43,7 @@ h2 {
   min-width: fit-content;
   color: white;
   font-size: 18px;
-  font-family: wargika;
+  font-family: Londrina Solid;
   font-weight: 400;
   word-wrap: break-word;
   margin: 0px;
@@ -57,7 +56,7 @@ h2.me {
 p {
   margin: 0px;
   color: white;
-  font-family: Text Me One;
+  font-family: Bricolage Grotesque;
   font-size: 14px;
   font-weight: 400;
   background: none;
@@ -105,6 +104,7 @@ p {
   -o-object-fit: cover;
      object-fit: cover;
   background-color: #1e1e1e;
+  border-radius: 2rem;
 }
 
 .thumbnail-container {
@@ -164,18 +164,27 @@ p {
   width: 100%;
 }
 
+.input-container {
+  border-radius: 2rem;
+  border: 0.5px solid #FF00D6;
+  box-shadow: 3px 3px 6px 0px rgba(255, 0, 214, 0.25);
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 24px;
+}
+
 /* Style inputs and textareas */
 input[type=text],
 textarea {
   width: 100%;
   padding: 12px;
   border: 0.5px solid white;
-  border-radius: 0px;
+  border-radius: 1rem;
   background-color: transparent;
   box-sizing: border-box;
   resize: vertical;
   color: white;
-  font-family: Text Me One;
+  font-family: Bricolage Grotesque;
   font-size: 14px;
   font-weight: 400;
 }
@@ -189,19 +198,20 @@ label {
 /* Style the submit button */
 input[type=submit] {
   width: 75%;
-  color: white;
-  font-family: Text Me One;
+  font-family: Bricolage Grotesque;
+  color: #1e1e1e;
   font-size: 14px;
   font-weight: 400;
-  background-color: #1e1e1e;
+  background-color: white;
   padding: 12px 20px;
-  border: 0.5px solid white;
+  border-radius: 1rem;
+  border: none;
   cursor: pointer;
   float: right;
 }
 
 input[type=submit]:hover {
-  box-shadow: 3px 3px 6px 0px rgba(255, 255, 255, 0.25);
+  background-color: #FF00D6;
 }
 
 /* Floating column for labels: 25% width */
@@ -220,7 +230,7 @@ input[type=submit]:hover {
 
 .row {
   color: white;
-  font-family: Text Me One;
+  font-family: Bricolage Grotesque;
   font-size: 14px;
   font-weight: 400;
   margin-bottom: 16px;
@@ -228,14 +238,14 @@ input[type=submit]:hover {
 
 ::-moz-placeholder {
   color: #737373;
-  font-family: Text Me One;
+  font-family: Bricolage Grotesque;
   font-size: 14px;
   font-weight: 400;
 }
 
 ::placeholder {
   color: #737373;
-  font-family: Text Me One;
+  font-family: Bricolage Grotesque;
   font-size: 14px;
   font-weight: 400;
 }
@@ -269,11 +279,6 @@ input[type=submit]:hover {
   }
   .contact-form {
     width: 30%;
-    border: 0.5px solid white;
-    box-shadow: 3px 3px 6px 0px rgba(255, 255, 255, 0.25);
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 24px;
   }
 }
 /* when the screen is more than 1200px wide, gap between paragraph ad form larger */
@@ -298,7 +303,7 @@ input[type=submit]:hover {
 }
 
 .social-icon:hover {
-  box-shadow: 3px 3px 6px 0px rgba(255, 255, 255, 0.25);
+  box-shadow: 3px 3px 6px 0px rgba(255, 0, 214, 0.25);
 }
 
 footer p {
