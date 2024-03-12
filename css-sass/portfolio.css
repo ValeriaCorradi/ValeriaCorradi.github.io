@@ -1,6 +1,9 @@
 * {
-  background-color: #1e1e1e;
   color: white;
+}
+
+body {
+  background: linear-gradient(to bottom right, #27005B, #2F3B77, #236147);
 }
 
 a {
@@ -161,6 +164,7 @@ p {
   padding-left: 40px;
   padding-right: 40px;
   padding-bottom: 24px;
+  background-color: #1e1e1e;
 }
 
 /* Style inputs and textareas */
@@ -275,17 +279,18 @@ input[type=submit]:hover {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  justify-content: flex-end;
+  align-items: flex-end;
   background: transparent;
 }
 
 .social-icon {
   align-self: flex-end;
   border-radius: 40px;
+  fill: white;
 }
 
 .social-icon:hover {
-  box-shadow: 0px -2px 0px 4px #57F2B1;
+  fill: #57F2B1;
 }
 
 footer p {
