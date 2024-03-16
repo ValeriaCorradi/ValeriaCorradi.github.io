@@ -207,9 +207,21 @@ footer p {
     gap: 80px;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 430px) {
   .thumbnail-container,
   .thumbnail {
     height: 240px;
+  }
+  .projects {
+    justify-content: center;
+  }
+  body {
+    margin: 40px 0 0 0;
+  }
+  header h1 {
+    margin-left: 40px;
+  }
+  .projects-container h2 {
+    margin-left: 40px;
   }
 }/*# sourceMappingURL=portfolio.css.map */
