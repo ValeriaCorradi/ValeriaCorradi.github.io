@@ -160,4 +160,43 @@ footer p {
 .footer-link:hover h3 {
   color: #FFFBF4;
   transition: 0.5s ease;
+}
+
+@media only screen and (max-width: 1000px) {
+  h1 {
+    font-size: 120px;
+  }
+  h2 {
+    font-size: 72px;
+    line-height: 72px;
+  }
+  h3 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  header {
+    flex-direction: column;
+  }
+  .paragraph {
+    padding: 32px 40px 32px 40px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .projects-container {
+    flex-direction: column;
+  }
+  .projects {
+    justify-content: flex-start;
+  }
+  p {
+    font-size: 14px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  body {
+    margin: 40px;
+  }
 }/*# sourceMappingURL=portfolio.css.map */
