@@ -194,6 +194,7 @@ footer p {
   header {
     flex-direction: column;
   }
+
   .paragraph {
     padding: 32px 40px 32px 40px;
   }
@@ -217,6 +218,24 @@ footer p {
   }
 
   body {
-    margin: 40px;  
+    margin: 40px;
   }
+
+  .paragraph {
+    gap: 1rem;
+  }
+
+  body,
+  .main {
+    gap: 80px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+
+  .thumbnail-container,
+  .thumbnail {
+    height: 240px;
+  }
+
 }
