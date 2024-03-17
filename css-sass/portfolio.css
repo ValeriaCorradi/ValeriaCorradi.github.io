@@ -77,7 +77,7 @@ header,
   display: flex;
   flex-direction: column;
   padding: 64px 80px 64px 80px;
-  background: linear-gradient(to bottom right, rgba(255, 0, 214, 0.5), rgba(87, 104, 190, 0.5), rgba(97, 232, 175, 0.5));
+  background: linear-gradient(to bottom right, rgba(255, 0, 214, 0.6), rgba(87, 104, 190, 0.6), rgba(97, 232, 175, 0.6));
   gap: 2rem;
 }
 
