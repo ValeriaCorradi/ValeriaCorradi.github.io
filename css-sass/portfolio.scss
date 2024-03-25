@@ -173,6 +173,150 @@ footer p {
 }
 
 
+@media only screen and (min-width: 4000px) {
+  h1 {
+    font-size: 400px;
+  }
+
+  h2 {
+    font-size: 320px;
+    line-height: 320px;
+  }
+
+  h3 {
+    font-size: 200px;
+    line-height: 200px;
+  }
+
+  h4 {
+    font-size: 64px;
+  }
+
+  p {
+    font-size: 48px;
+  }
+
+  .button {
+    height: 160px;
+  }
+  
+  .download-icon {
+    width: 64px;
+    height: 64px;
+  }
+
+  .thumbnail,
+  .thumbnail-container {
+    height: 1200px;
+  }
+
+  .thumbnail-container h3 {
+    padding: 40px;
+  }
+
+  header,
+  .projects-container {
+    gap: 280px;
+  }
+
+  .projects {
+    gap: 80px;
+  }
+
+  .paragraph {
+    padding: 120px 160px 120px 160px;
+    gap: 4rem;
+  }
+
+  .body-copy {
+    gap: 4rem;
+  }
+
+  body {
+    margin: 200px;  
+  }
+  
+  body,
+  .main {
+    gap: 280px;
+  }
+
+}
+
+
+
+
+@media only screen and (min-width: 2000px) and (max-width: 3999px) {
+  h1 {
+    font-size: 280px;
+  }
+
+  h2 {
+    font-size: 160px;
+    line-height: 160px;
+  }
+
+  h3 {
+    font-size: 80px;
+    line-height: 80px;
+  }
+
+  h4 {
+    font-size: 32px;
+  }
+
+  p {
+    font-size: 24px;
+  }
+
+  .button {
+    height: 80px;
+  }
+  
+  .download-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .thumbnail,
+  .thumbnail-container {
+    height: 400px;
+  }
+
+  .thumbnail-container h3 {
+    padding: 24px;
+  }
+
+  header,
+  .projects-container {
+    gap: 120px;
+  }
+
+  .projects {
+    gap: 40px;
+  }
+
+  .paragraph {
+    padding: 80px 120px 80px 120px;
+    gap: 4rem;
+  }
+
+  .body-copy {
+    gap: 2rem;
+  }
+
+  body {
+    margin: 120px;  
+  }
+  
+  body,
+  .main {
+    gap: 160px;
+  }
+
+}
+
+
 @media only screen and (max-width: 1000px) {
   h1 {
     font-size: 120px;
