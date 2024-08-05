@@ -24,6 +24,10 @@ a {
   text-decoration: none;
 }
 
+.external {
+  text-decoration: underline;
+}
+
 p a {
   font-weight: 800;
 }
@@ -158,6 +162,15 @@ header,
   }
 }
 
+.thumbnail-link {
+  height: fit-content;
+
+  p {
+    padding-top: 0.25rem;
+    width: 302px;
+  }
+}
+
 footer {
   align-items: center;
 }
@@ -199,7 +212,7 @@ footer p {
   .button {
     height: 160px;
   }
-  
+
   .download-icon {
     width: 64px;
     height: 64px;
@@ -212,6 +225,10 @@ footer p {
 
   .thumbnail-container h3 {
     padding: 40px;
+  }
+
+  .thumbnail-link p {
+    width: 1200px;
   }
 
   header,
@@ -233,9 +250,9 @@ footer p {
   }
 
   body {
-    margin: 200px;  
+    margin: 200px;
   }
-  
+
   body,
   .main {
     gap: 280px;
@@ -272,7 +289,7 @@ footer p {
   .button {
     height: 80px;
   }
-  
+
   .download-icon {
     width: 32px;
     height: 32px;
@@ -285,6 +302,10 @@ footer p {
 
   .thumbnail-container h3 {
     padding: 24px;
+  }
+
+  .thumbnail-link p {
+    width: 400px;
   }
 
   header,
@@ -306,9 +327,9 @@ footer p {
   }
 
   body {
-    margin: 120px;  
+    margin: 120px;
   }
-  
+
   body,
   .main {
     gap: 160px;
@@ -388,6 +409,10 @@ footer p {
   .thumbnail-container,
   .thumbnail {
     height: 240px;
+  }
+
+  .thumbnail-link p {
+    width: 240px;
   }
 
   .projects {

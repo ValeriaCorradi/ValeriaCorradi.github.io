@@ -18,6 +18,10 @@ a {
   text-decoration: none;
 }
 
+.external {
+  text-decoration: underline;
+}
+
 p a {
   font-weight: 800;
 }
@@ -148,6 +152,15 @@ header,
   transition: 0.5s ease;
 }
 
+.thumbnail-link {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.thumbnail-link p {
+  padding-top: 0.25rem;
+  width: 302px;
+}
+
 footer {
   align-items: center;
 }
@@ -193,6 +206,9 @@ footer p {
   }
   .thumbnail-container h3 {
     padding: 40px;
+  }
+  .thumbnail-link p {
+    width: 1200px;
   }
   header,
   .projects-container {
@@ -247,6 +263,9 @@ footer p {
   }
   .thumbnail-container h3 {
     padding: 24px;
+  }
+  .thumbnail-link p {
+    width: 400px;
   }
   header,
   .projects-container {
@@ -325,6 +344,9 @@ footer p {
   .thumbnail-container,
   .thumbnail {
     height: 240px;
+  }
+  .thumbnail-link p {
+    width: 240px;
   }
   .projects {
     justify-content: center;
