@@ -1,0 +1,150 @@
+a {
+  text-decoration: none;
+}
+
+.external {
+  text-decoration: underline;
+}
+
+p a {
+  font-weight: 800;
+}
+
+p a:hover {
+  color: $white;
+  transition: .5s ease;
+}
+
+h1,
+h2,
+h3 {
+  font-family: bebas neue;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h1 {
+  font-size: 200px;
+  line-height: 200px;
+}
+
+h2 {
+  font-size: 120px;
+  line-height: 120px;
+}
+
+h3 {
+  font-size: 64px;
+  line-height: 64px;
+}
+
+h4 {
+  font-family: bricolage grotesque;
+  font-size: 32px;
+}
+
+h5 {  
+  font-family: bricolage grotesque;
+  font-size: 24px;
+  margin: 0;
+}
+
+p {
+  font-family: bricolage grotesque;
+  font-weight: 500;
+  font-size: 20px;
+  margin: 0;
+}
+
+
+
+@media only screen and (min-width: 4000px) {
+  h1 {
+    font-size: 400px;
+  }
+
+  h2 {
+    font-size: 320px;
+    line-height: 320px;
+  }
+
+  h3 {
+    font-size: 200px;
+    line-height: 200px;
+  }
+
+  h4 {
+    font-size: 120px;
+  }
+
+  h5 {
+    font-size: 64px;
+  }
+
+  p {
+    font-size: 48px;
+  }
+}
+
+
+
+@media only screen and (min-width: 2000px) and (max-width: 3999px) {
+  h1 {
+    font-size: 280px;
+  }
+
+  h2 {
+    font-size: 160px;
+    line-height: 160px;
+  }
+
+  h3 {
+    font-size: 80px;
+    line-height: 80px;
+  }
+
+  h4 {
+    font-size: 40px;
+  }
+
+  h5 {
+    font-size: 32px;
+  }
+
+  p {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  h1 {
+    font-size: 120px;
+  }
+
+  h2 {
+    font-size: 72px;
+    line-height: 72px;
+  }
+
+  h3 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+}
+
+
+@media only screen and (max-width: 700px) {
+  p {
+    font-size: 14px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  body {
+    margin: 40px;
+  }
+}
