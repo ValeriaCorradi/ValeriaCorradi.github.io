@@ -1,3 +1,5 @@
+// NAVIGATION
+
 nav {
   position: fixed;
   width: 100vw;
@@ -5,9 +7,10 @@ nav {
   justify-items: stretch;
   background-color: rgba($white, 0.25);
   backdrop-filter: blur($blur);
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   z-index: 1000;
+  border-bottom: 0.5rem solid $black;
 }
 
 .nav-logo {
@@ -29,4 +32,52 @@ nav {
 
 .nav-icons:hover .menu-icon-hover {
   display: flex;
+}
+
+
+// TICKER
+
+.ticker-wrap {
+  margin-top: 6.5rem;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  border-bottom: 0.5rem solid $black;
+}
+
+.ticker {
+  display: inline-block;
+  animation: marquee 30s linear infinite;
+}
+
+.item-collection-1 {
+  position: relative;
+  left: 0%;
+  animation: swap 30s linear infinite;
+}
+
+.item {
+  display: inline-block;
+  padding: 0 1rem;
+}
+
+/* Transition */
+@keyframes marquee {
+  0% {
+    transform: translateX(0)
+  }
+  100% {
+    transform: translateX(-100%)
+  }
+}
+
+@keyframes swap {
+  0%,
+  50% {
+    left: 0%;
+  }
+  50.01%,
+  100% {
+    left: 100%;
+  }
 }
