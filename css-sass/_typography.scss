@@ -10,11 +10,6 @@ p a {
   font-weight: 800;
 }
 
-p a:hover {
-  color: $white;
-  transition: .5s ease;
-}
-
 h1,
 h2,
 h3 {
@@ -39,25 +34,28 @@ h3 {
   line-height: 64px;
 }
 
-h4 {
+h4, h5, p {
   font-family: bricolage grotesque;
+  margin: 0;
+}
+
+h4 {
+
   font-size: 32px;
 }
 
 h5 {  
-  font-family: bricolage grotesque;
   font-size: 24px;
-  color: $white;
 }
 
 p {
-  font-family: bricolage grotesque;
   font-weight: 500;
-  font-size: 20px;
-  margin: 0;
+  font-size: 18px;
 }
 
-
+.about p {
+  font-size: 24px;
+}
 
 @media only screen and (min-width: 4000px) {
   h1 {

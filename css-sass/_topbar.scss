@@ -5,8 +5,7 @@ nav {
   width: 100vw;
   display: flex;
   justify-items: stretch;
-  background-color: rgba($white, 0.25);
-  backdrop-filter: blur($blur);
+  background-color: $white;
   top: 0;
   left: 0;
   z-index: 1000;
@@ -22,7 +21,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   display: flex;
-  margin: 1rem 20rem 1rem 20rem;
+  margin: 1rem 25%;
 }
 
 .menu-icon-hover,

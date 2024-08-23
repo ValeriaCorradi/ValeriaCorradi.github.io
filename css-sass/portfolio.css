@@ -3,13 +3,11 @@ nav {
   width: 100vw;
   display: flex;
   justify-items: stretch;
-  background-color: rgba(255, 251, 244, 0.25);
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
+  background-color: #FFFBF4;
   top: 0;
   left: 0;
   z-index: 1000;
-  border-bottom: 0.5rem solid #0E0E0E;
+  border-bottom: 0.5rem solid #1E1e1e;
 }
 
 .nav-logo {
@@ -23,7 +21,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   display: flex;
-  margin: 1rem 20rem 1rem 20rem;
+  margin: 1rem 25%;
 }
 
 .menu-icon-hover,
@@ -40,7 +38,7 @@ nav {
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
-  border-bottom: 0.5rem solid #0E0E0E;
+  border-bottom: 0.5rem solid #1E1e1e;
 }
 
 .ticker {
@@ -88,11 +86,6 @@ p a {
   font-weight: 800;
 }
 
-p a:hover {
-  color: #FFFBF4;
-  transition: 0.5s ease;
-}
-
 h1,
 h2,
 h3 {
@@ -117,22 +110,26 @@ h3 {
   line-height: 64px;
 }
 
-h4 {
+h4, h5, p {
   font-family: bricolage grotesque;
+  margin: 0;
+}
+
+h4 {
   font-size: 32px;
 }
 
 h5 {
-  font-family: bricolage grotesque;
   font-size: 24px;
-  color: #FFFBF4;
 }
 
 p {
-  font-family: bricolage grotesque;
   font-weight: 500;
-  font-size: 20px;
-  margin: 0;
+  font-size: 18px;
+}
+
+.about p {
+  font-size: 24px;
 }
 
 @media only screen and (min-width: 4000px) {
@@ -204,7 +201,7 @@ p {
   }
 }
 * {
-  color: #0E0E0E;
+  color: #1E1e1e;
 }
 
 body {
@@ -213,7 +210,7 @@ body {
 }
 
 .main {
-  margin: 0 20rem;
+  margin: 0 25%;
 }
 
 body,
@@ -228,13 +225,6 @@ body,
   gap: 1rem;
 }
 
-.projects-container {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 40px;
-}
-
 .paragraph40 {
   display: flex;
   flex-direction: column;
@@ -247,88 +237,74 @@ body,
   gap: 1.5rem;
 }
 
+.paragraph08 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card {
+  padding: 1rem;
+  align-items: center;
+  border: 1px solid rgba(30, 30, 30, 0.2);
+}
+.card img {
+  height: 10rem;
+}
+
+.card:hover {
+  border-color: #FFFBF4;
+  background-image: linear-gradient(to bottom right, rgba(255, 0, 214, 0.6), rgba(87, 104, 190, 0.6), rgba(97, 232, 175, 0.6));
+  transition: 1s ease;
+  cursor: pointer;
+}
+
 .button {
   display: flex;
   justify-content: center;
   gap: 1rem;
   align-items: center;
   padding: 0px 24px 2px 16px;
-  background-color: #0E0E0E;
+  background-color: #1E1e1e;
   height: 48px;
+}
+.button h5 {
+  color: #FFFBF4;
 }
 
 .download-icon {
   fill: #FFFBF4;
-  stroke: #FFFBF4;
 }
 
 .button:hover {
-  background-color: transparent;
-  box-shadow: 0px 0px 0px 2px #0E0E0E inset;
+  background-color: #FFFBF4;
+  background-image: linear-gradient(to bottom right, rgba(255, 0, 214, 0.6), rgba(87, 104, 190, 0.6), rgba(97, 232, 175, 0.6));
   transition: 0.5s ease;
 }
 
-.button:hover h4 {
-  color: #0E0E0E;
+.button:hover h5 {
+  color: #1E1e1e;
 }
 
 .button:hover .download-icon {
-  fill: #0E0E0E;
-}
-
-.projects {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-  justify-content: flex-end;
-}
-
-.thumbnail-container {
-  height: 302px;
-  position: relative;
-  background-color: #0E0E0E;
-}
-.thumbnail-container h3 {
-  position: absolute;
-  top: 0;
-  top: 50%;
-  transform: translate(0, -50%);
-  padding: 8px;
-  background: linear-gradient(to bottom right, #FF00D6, #5768BE, #61E8AF);
-  -webkit-text-fill-color: transparent;
-  /*     -webkit-background-clip: text;
-   */
-  opacity: 0;
-}
-
-.thumbnail-container:hover .thumbnail {
-  opacity: 0.2;
-  transition: 0.5s ease;
-}
-.thumbnail-container:hover h3 {
-  opacity: 1;
-  transition: 0.5s ease;
-}
-
-.thumbnail-link {
-  height: -moz-fit-content;
-  height: fit-content;
-}
-.thumbnail-link p {
-  padding-top: 0.25rem;
-  width: 302px;
+  fill: #1E1e1e;
 }
 
 footer {
   align-items: center;
+  background-image: linear-gradient(to bottom right, rgba(255, 0, 214, 0.6), rgba(87, 104, 190, 0.6), rgba(97, 232, 175, 0.6));
+  padding: 2.5rem;
 }
-
+footer .paragraph24 {
+  align-items: center;
+}
 footer p {
   opacity: 0.7;
   text-align: center;
 }
 
-.footer-link:hover h3 {
+footer a:hover,
+.footer-link h3:hover {
   color: #FFFBF4;
   transition: 0.5s ease;
 }
