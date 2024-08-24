@@ -1,6 +1,8 @@
 @import './variables';
-@import './topbar';
 @import './typography';
+@import './footer';
+@import './topbar';
+
 
 * {
   color: $black;
@@ -26,6 +28,10 @@ body,
   display: flex;
   gap: 1rem;
   align-items: center;
+}
+
+nav .hor {
+  text-align: center;
 }
 
 .paragraph40 {
@@ -95,29 +101,9 @@ body,
   fill: $black;
 }
 
-footer {
-  align-items: center;
-  background-image: $gradient;
-  padding: 2.5rem;
-
-  .paragraph24 {
-    align-items: center;
-  }
-
-  p {
-    opacity: 0.7;
-    text-align: center;
-  }
-}
-
-footer a:hover,
-.footer-link h3:hover {
-  color: $white;
-  transition: .5s ease;
-}
-
 
 @media only screen and (min-width: 4000px) {
+
   .button {
     height: 160px;
   }
@@ -132,9 +118,34 @@ footer a:hover,
     gap: 280px;
   }
 
+  .main {
+    margin: 0 25%;
+  }
+
+  .paragraph40 {
+    gap: 10rem;
+  }
+
+  .paragraph24 {
+    gap: 6rem;
+  }
+
+  .paragraph08 {
+    gap: 2rem;
+  }
+
+  .card {
+    padding: 4rem;
+
+    img {
+      height: 40rem;
+    }
+  }
+
+  .hor {
+    gap: 4rem;
+  }
 }
-
-
 
 
 @media only screen and (min-width: 2000px) and (max-width: 3999px) {
@@ -151,18 +162,41 @@ footer a:hover,
   .main {
     gap: 160px;
   }
+
+  .main {
+    margin: 0 25%;
+  }
+
+  .paragraph40 {
+    gap: 5rem;
+  }
+
+  .paragraph24 {
+    gap: 3rem;
+  }
+
+  .paragraph08 {
+    gap: 1rem;
+  }
+
+  .card {
+    padding: 2rem;
+
+    img {
+      height: 14rem;
+    }
+  }
+
+  .hor {
+    gap: 2rem;
+  }
 }
 
 
-@media only screen and (max-width: 1000px) {
-
-  nav {
-    height: 5rem;
-  }
+@media only screen and (max-width: 1024px) {
   .main {
     margin: 0 10%;
   }
-
 }
 
 @media only screen and (max-width: 700px) {
@@ -171,9 +205,31 @@ footer a:hover,
   .main {
     gap: 80px;
   }
+
+  .main {
+    margin: 0 5%;
+  }
+
+  .card img {
+    height: 8rem;
+  }
 }
 
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 480px) {
 
-  
+  .card {
+
+    img {
+      height: 6rem;
+    }
+
+    p {
+      display: none;
+    }
+  }
+
+  .hor {
+    gap: 0.5rem;
+  }
+
 }

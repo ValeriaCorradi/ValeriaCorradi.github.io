@@ -1,13 +1,14 @@
 a {
   text-decoration: none;
+  font-weight: 800;
 }
 
 .external {
   text-decoration: underline;
 }
 
-p a {
-  font-weight: 800;
+.external:hover {
+color: #5768BE;
 }
 
 h1,
@@ -43,7 +44,7 @@ h4 {
   font-size: 32px;
 }
 
-h5 {  
+h5, .about p {  
   font-size: 24px;
 }
 
@@ -52,14 +53,11 @@ p {
   font-size: 18px;
 }
 
-.about p {
-  font-size: 24px;
-}
 
 @media only screen and (min-width: 4000px) {
   h1 {
-    font-size: 400px;
-    line-height: 400px;
+    font-size: 480px;
+    line-height: 480px;
   }
 
   h2 {
@@ -68,27 +66,22 @@ p {
   }
 
   h3 {
-    font-size: 200px;
-    line-height: 200px;
+    font-size: 240px;
+    line-height: 240px;
   }
 
   h4 {
-    font-size: 120px;
+    font-size: 180px;
   }
 
-  h5 {
-    font-size: 64px;
+  h5, .about p {
+    font-size: 80px;
   }
 
   p {
-    font-size: 48px;
-  }
-
-  .about p {
     font-size: 64px;
   }
 }
-
 
 
 @media only screen and (min-width: 2000px) and (max-width: 3999px) {
@@ -111,23 +104,20 @@ p {
     font-size: 40px;
   }
 
-  h5 {
+  h5, .about p {
     font-size: 32px;
   }
 
   p {
     font-size: 24px;
   }
-
-  .about p {
-    font-size: 32px;
-  }
 }
 
-@media only screen and (max-width: 1000px) {
+
+@media only screen and (max-width: 1024px) {
   h1 {
-    font-size: 120px;
-    line-height: 120px;
+    font-size: 140px;
+    line-height: 140px;
   }
 
   h2 {
@@ -145,28 +135,23 @@ p {
     line-height: 24px;
   }
 
-  h5 {
+  h5, .about p {
     font-size: 20px;
-    line-height: 20px;
   }
-
 }
 
 
 @media only screen and (max-width: 700px) {
 
-  body {
-    margin: 40px;
-  }
-
   h4 {
     font-size: 16px;
   }
-  p {
-    font-size: 14px;
+
+  h5, .about p {
+    font-size: 20px;
   }
 
-  .about p {
-    font-size: 20px;
+  p {
+    font-size: 14px;
   }
 }

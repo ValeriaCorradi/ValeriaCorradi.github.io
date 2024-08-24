@@ -65,16 +65,19 @@ nav {
   0% {
     transform: translateX(0)
   }
+
   100% {
     transform: translateX(-100%)
   }
 }
 
 @keyframes swap {
+
   0%,
   50% {
     left: 0%;
   }
+
   50.01%,
   100% {
     left: 100%;
@@ -83,13 +86,63 @@ nav {
 
 
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1024px) {
 
   .nav-items {
-    margin: 0 10%;
+    margin: 1rem 10%;
+  }
+}
+
+@media only screen and (min-width: 2000px) and (max-width: 3999px) {
+
+  nav,
+  .ticker-wrap {
+    border-bottom-width: 1rem;
   }
 
   .ticker-wrap {
-    margin-top: 4.5rem;
+    margin-top: 11rem;
+
+  }
+
+  .nav-logo {
+    height: 5rem;
+  }
+
+  .nav-items {
+    margin: 1.5rem 25%;
+  }
+}
+
+@media only screen and (min-width: 4000px) {
+
+  nav {
+    border-bottom-width: 2rem;
+  }
+
+  .ticker-wrap {
+    margin-top: 20rem;
+    border-bottom-width: 2rem;
+  }
+
+
+  .nav-logo {
+    height: 10rem;
+  }
+
+  .menu-icon,
+  .menu-icon-hover {
+    height: 7rem;
+  }
+
+  .nav-items {
+    margin: 2.5rem 25%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+
+  .nav-items {
+    margin: 1rem 5%;
   }
 }
