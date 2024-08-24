@@ -12,7 +12,7 @@ body {
 }
 
 .main {
-  margin: 0 25%;
+  margin: 0 20%;
 }
 
 body,
@@ -25,6 +25,7 @@ body,
 .hor {
   display: flex;
   gap: 1rem;
+  align-items: center;
 }
 
 .paragraph40 {
@@ -126,36 +127,6 @@ footer a:hover,
     height: 64px;
   }
 
-  .thumbnail,
-  .thumbnail-container {
-    height: 1200px;
-  }
-
-  .thumbnail-container h3 {
-    padding: 40px;
-  }
-
-  .thumbnail-link p {
-    width: 1200px;
-  }
-
-  .projects-container {
-    gap: 280px;
-  }
-
-  .projects {
-    gap: 80px;
-  }
-
-  .paragraph {
-    padding: 120px 160px 120px 160px;
-    gap: 4rem;
-  }
-
-  .body-copy {
-    gap: 4rem;
-  }
-
   body,
   .main {
     gap: 280px;
@@ -176,73 +147,25 @@ footer a:hover,
     height: 32px;
   }
 
-  .thumbnail,
-  .thumbnail-container {
-    height: 400px;
-  }
-
-  .thumbnail-container h3 {
-    padding: 24px;
-  }
-
-  .thumbnail-link p {
-    width: 400px;
-  }
-
-
-  .projects-container {
-    gap: 120px;
-  }
-
-  .projects {
-    gap: 40px;
-  }
-
-  .paragraph {
-    padding: 80px 120px 80px 120px;
-    gap: 4rem;
-  }
-
-  .body-copy {
-    gap: 2rem;
-  }
-
-
   body,
   .main {
     gap: 160px;
   }
-
 }
 
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
 
-  .paragraph {
-    padding: 32px 40px 32px 40px;
+  nav {
+    height: 5rem;
   }
+  .main {
+    margin: 0 10%;
+  }
+
 }
 
 @media only screen and (max-width: 700px) {
-  .projects-container {
-    flex-direction: column;
-  }
-
-  .projects {
-    justify-content: flex-start;
-  }
-
-  .thumbnail {
-    opacity: 0.2;
-  }
-
-  .thumbnail-container h3 {
-    opacity: 1;
-  }
-
-  .paragraph {
-    gap: 1rem;
-  }
 
   body,
   .main {
@@ -252,21 +175,5 @@ footer a:hover,
 
 @media only screen and (max-width: 430px) {
 
-  .thumbnail-container,
-  .thumbnail {
-    height: 240px;
-  }
-
-  .thumbnail-link p {
-    width: 240px;
-  }
-
-  .projects {
-    justify-content: center;
-  }
-
-  .projects-container h2 {
-    margin-left: 40px;
-  }
-
+  
 }
