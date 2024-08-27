@@ -52,6 +52,12 @@ nav .hor {
   gap: 0.5rem;
 }
 
+.paragraph0 {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
 .card {
   padding: 1rem;
   align-items: center;
