@@ -304,6 +304,10 @@ body,
   gap: 120px;
 }
 
+img {
+  max-width: 100%;
+}
+
 .hor {
   display: flex;
   gap: 1rem;
@@ -383,6 +387,20 @@ nav .hor {
 
 .button:hover .download-icon {
   fill: #1E1e1e;
+}
+
+.link-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+  width: 50%;
+  cursor: pointer;
+}
+
+.link-item:hover {
+  background-image: linear-gradient(to bottom right, rgba(255, 0, 214, 0.5), rgba(87, 104, 190, 0.5), rgba(97, 232, 175, 0.5));
+  transition: 0.5s ease;
 }
 
 @media only screen and (min-width: 4000px) {
@@ -468,6 +486,9 @@ nav .hor {
   }
   .card img {
     height: 8rem;
+  }
+  .link-item {
+    width: 90%;
   }
 }
 @media only screen and (max-width: 480px) {

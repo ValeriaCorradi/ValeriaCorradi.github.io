@@ -24,6 +24,10 @@ body,
   gap: 120px;
 }
 
+img {
+  max-width: 100%;
+}
+
 .hor {
   display: flex;
   gap: 1rem;
@@ -105,6 +109,20 @@ nav .hor {
 
 .button:hover .download-icon {
   fill: $black;
+}
+
+.link-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+  width: 50%;
+  cursor: pointer;
+}
+
+.link-item:hover {
+  background-image: $gradient;
+  transition: .5s ease;
 }
 
 
@@ -218,6 +236,10 @@ nav .hor {
 
   .card img {
     height: 8rem;
+  }
+
+  .link-item {
+    width: 90%;
   }
 }
 
