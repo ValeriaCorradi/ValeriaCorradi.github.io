@@ -27,10 +27,14 @@ nav {
 .menu-icon-hover,
 .nav-icons:hover .menu-icon {
   display: none;
+  transition: display 0.5s ease;
+
 }
 
 .nav-icons:hover .menu-icon-hover {
   display: flex;
+  transition: display 0.5s ease;
+
 }
 
 

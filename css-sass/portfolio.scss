@@ -93,21 +93,21 @@ nav .hor {
   }
 }
 
-.download-icon {
+.button svg {
   fill: $white;
 }
 
 .button:hover {
   background-color: $white;
   background-image: $gradient;
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
 
 .button:hover h5 {
   color: $black;
 }
 
-.button:hover .download-icon {
+.button:hover svg {
   fill: $black;
 }
 
@@ -115,6 +115,7 @@ nav .hor {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   padding: 1rem;
   width: 50%;
   cursor: pointer;
@@ -122,7 +123,6 @@ nav .hor {
 
 .link-item:hover {
   background-image: $gradient;
-  transition: .5s ease;
 }
 
 

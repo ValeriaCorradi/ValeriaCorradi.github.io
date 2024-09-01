@@ -193,10 +193,12 @@ nav {
 .menu-icon-hover,
 .nav-icons:hover .menu-icon {
   display: none;
+  transition: display 0.5s ease;
 }
 
 .nav-icons:hover .menu-icon-hover {
   display: flex;
+  transition: display 0.5s ease;
 }
 
 .ticker-wrap {
@@ -371,7 +373,7 @@ nav .hor {
   color: #FFFBF4;
 }
 
-.download-icon {
+.button svg {
   fill: #FFFBF4;
 }
 
@@ -385,7 +387,7 @@ nav .hor {
   color: #1E1e1e;
 }
 
-.button:hover .download-icon {
+.button:hover svg {
   fill: #1E1e1e;
 }
 
@@ -393,6 +395,7 @@ nav .hor {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   padding: 1rem;
   width: 50%;
   cursor: pointer;
@@ -400,7 +403,6 @@ nav .hor {
 
 .link-item:hover {
   background-image: linear-gradient(to bottom right, rgba(255, 0, 214, 0.5), rgba(87, 104, 190, 0.5), rgba(97, 232, 175, 0.5));
-  transition: 0.5s ease;
 }
 
 @media only screen and (min-width: 4000px) {
