@@ -14,5 +14,15 @@ function loadFooter() {
     });
 }
 
+// Function to load the nav
+function loadNav() {
+  fetch('nav.html')
+    .then(response => response.text())
+    .then(data => {
+      document.querySelector('#nav').innerHTML = data;
+    });
+}
+
 // Call the function to load the footer
+loadNav();
 loadFooter();

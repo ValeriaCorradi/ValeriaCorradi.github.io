@@ -75,7 +75,7 @@ nav .hor {
 .card:hover {
   border-color: $white;
   background-image: $gradient;
-  transition: 1s ease;
+  transition: 0.5s ease;
   cursor: pointer;
 }
 
@@ -237,9 +237,8 @@ background-image:$gradient;
   .card img {
     height: 8rem;
   }
-
   .link-item {
-    width: 90%;
+    width: 65%;
   }
 }
 
@@ -256,6 +255,10 @@ background-image:$gradient;
     }
   }
 
+  .link-item {
+    width: 90%;
+  }
+  
   .hor {
     gap: 0.5rem;
   }

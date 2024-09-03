@@ -13,7 +13,7 @@ nav {
 }
 
 .nav-logo {
-  height: 3rem;
+  height: 3.5rem;
 }
 
 .nav-items {
@@ -41,7 +41,6 @@ nav {
 // TICKER
 
 .ticker-wrap {
-  margin-top: 6.5rem;
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
@@ -104,11 +103,6 @@ nav {
     border-bottom-width: 1rem;
   }
 
-  .ticker-wrap {
-    margin-top: 11rem;
-
-  }
-
   .nav-logo {
     height: 5rem;
   }
@@ -125,7 +119,6 @@ nav {
   }
 
   .ticker-wrap {
-    margin-top: 20rem;
     border-bottom-width: 2rem;
   }
 
@@ -146,6 +139,19 @@ nav {
 @media only screen and (max-width: 700px) {
 
   .nav-items {
-    margin: 1rem 5%;
+    margin: 0.5rem 5%;
+  }
+
+  .nav-logo,
+  nav .menu-icon,
+  nav .menu-icon-hover {
+    height: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+
+  nav .hor {
+    display: none;
   }
 }
