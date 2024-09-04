@@ -28,6 +28,10 @@ img {
   max-width: 100%;
 }
 
+.w60 {
+  width:60%
+}
+
 .hor {
   display: flex;
   gap: 1rem;
@@ -260,6 +264,10 @@ nav .hor {
 
   .link-item {
     width: 65%;
+  }
+
+  .w60 {
+    width: 100%;
   }
 }
 

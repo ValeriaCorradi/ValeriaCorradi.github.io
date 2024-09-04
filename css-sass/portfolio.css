@@ -170,6 +170,7 @@ footer p {
 }
 
 footer a:hover,
+.footer-link h2:hover,
 .footer-link h3:hover,
 .footer-link h4:hover {
   color: #FFFBF4;
@@ -339,6 +340,10 @@ body,
 
 img {
   max-width: 100%;
+}
+
+.w60 {
+  width: 60%;
 }
 
 .hor {
@@ -540,6 +545,9 @@ nav .hor {
   }
   .link-item {
     width: 65%;
+  }
+  .w60 {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 480px) {
