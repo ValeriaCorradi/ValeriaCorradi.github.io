@@ -2,7 +2,11 @@
 function scrollToSection(sectionId) {
   var section = document.getElementById(sectionId);
   section.scrollIntoView({ behavior: "smooth" });
-  //_________________CREATE SCROLL ANIMATION___________________________________
+}
+
+//close the manu and go back to the last page
+function goBack() {
+  window.history.back();
 }
 
 // Function to load the footer

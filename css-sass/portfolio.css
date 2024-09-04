@@ -35,7 +35,9 @@ h3 {
   line-height: 64px;
 }
 
-h4, h5, p {
+h4,
+h5,
+p {
   font-family: bricolage grotesque;
   margin: 0;
 }
@@ -44,7 +46,8 @@ h4 {
   font-size: 32px;
 }
 
-h5, .about p {
+h5,
+.about p {
   font-size: 24px;
 }
 
@@ -73,7 +76,8 @@ ul {
   h4 {
     font-size: 180px;
   }
-  h5, .about p {
+  h5,
+  .about p {
     font-size: 80px;
   }
   p {
@@ -96,7 +100,8 @@ ul {
   h4 {
     font-size: 40px;
   }
-  h5, .about p {
+  h5,
+  .about p {
     font-size: 32px;
   }
   p {
@@ -120,19 +125,35 @@ ul {
     font-size: 24px;
     line-height: 24px;
   }
-  h5, .about p {
+  h5,
+  .about p {
     font-size: 20px;
   }
 }
 @media only screen and (max-width: 700px) {
   h4 {
-    font-size: 16px;
-  }
-  h5, .about p {
     font-size: 20px;
+  }
+  h5,
+  .about p {
+    font-size: 16px;
   }
   p {
     font-size: 14px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  h1 {
+    font-size: 120px;
+    line-height: 120px;
+  }
+  h2 {
+    font-size: 64px;
+    line-height: 64px;
+  }
+  h3 {
+    font-size: 32px;
+    line-height: 32px;
   }
 }
 footer {
@@ -149,7 +170,8 @@ footer p {
 }
 
 footer a:hover,
-.footer-link h3:hover {
+.footer-link h3:hover,
+.footer-link h4:hover {
   color: #FFFBF4;
   transition: 0.5s ease;
 }
@@ -178,6 +200,7 @@ nav {
 
 .nav-logo {
   height: 3.5rem;
+  align-content: center;
 }
 
 .nav-items {
@@ -188,6 +211,10 @@ nav {
   align-items: center;
   display: flex;
   margin: 1rem 20%;
+}
+
+.nav-icons {
+  cursor: pointer;
 }
 
 .menu-icon-hover,
@@ -281,8 +308,7 @@ nav {
     margin: 0.5rem 5%;
   }
   .nav-logo,
-  nav .menu-icon,
-  nav .menu-icon-hover {
+  .nav-icons {
     height: 2.5rem;
   }
 }
@@ -410,6 +436,24 @@ nav .hor {
   background-image: linear-gradient(to bottom right, rgba(255, 0, 214, 0.5), rgba(87, 104, 190, 0.5), rgba(97, 232, 175, 0.5));
 }
 
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  background-image: linear-gradient(to bottom right, rgba(255, 0, 214, 0.5), rgba(87, 104, 190, 0.5), rgba(97, 232, 175, 0.5));
+  height: 100vh;
+}
+.menu .paragraph40 {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+.menu h2 {
+  text-align: center;
+}
+
 @media only screen and (min-width: 4000px) {
   .button {
     height: 160px;
@@ -510,5 +554,18 @@ nav .hor {
   }
   .hor {
     gap: 0.5rem;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .menu .hor {
+    flex-direction: column;
+  }
+  .card {
+    flex-direction: column;
+    text-align: center;
+  }
+  .card img {
+    width: 100%;
+    height: auto;
   }
 }/*# sourceMappingURL=portfolio.css.map */

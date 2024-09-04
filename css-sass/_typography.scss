@@ -8,7 +8,7 @@ a {
 }
 
 .external:hover {
-color: #5768BE;
+  color: #5768BE;
 }
 
 h1,
@@ -35,7 +35,9 @@ h3 {
   line-height: 64px;
 }
 
-h4, h5, p {
+h4,
+h5,
+p {
   font-family: bricolage grotesque;
   margin: 0;
 }
@@ -44,7 +46,8 @@ h4 {
   font-size: 32px;
 }
 
-h5, .about p {  
+h5,
+.about p {
   font-size: 24px;
 }
 
@@ -54,7 +57,7 @@ p {
 }
 
 ul {
-  margin:0;
+  margin: 0;
 }
 
 
@@ -78,7 +81,8 @@ ul {
     font-size: 180px;
   }
 
-  h5, .about p {
+  h5,
+  .about p {
     font-size: 80px;
   }
 
@@ -108,7 +112,8 @@ ul {
     font-size: 40px;
   }
 
-  h5, .about p {
+  h5,
+  .about p {
     font-size: 32px;
   }
 
@@ -139,7 +144,8 @@ ul {
     line-height: 24px;
   }
 
-  h5, .about p {
+  h5,
+  .about p {
     font-size: 20px;
   }
 }
@@ -148,14 +154,33 @@ ul {
 @media only screen and (max-width: 700px) {
 
   h4 {
-    font-size: 16px;
+    font-size: 20px;
   }
 
-  h5, .about p {
-    font-size: 20px;
+  h5,
+  .about p {
+    font-size: 16px;
   }
 
   p {
     font-size: 14px;
   }
+}
+
+@media only screen and (max-width: 400px) {
+  h1 {
+    font-size: 120px;
+    line-height: 120px;
+  }
+
+  h2 {
+    font-size: 64px;
+    line-height: 64px;
+  }
+
+  h3 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
 }

@@ -122,9 +122,29 @@ nav .hor {
 }
 
 .link-item:hover {
-background-image:$gradient;
+  background-image: $gradient;
 }
 
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  background-image: $gradient;
+  height: 100vh;
+
+  .paragraph40 {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+}
 
 @media only screen and (min-width: 4000px) {
 
@@ -237,6 +257,7 @@ background-image:$gradient;
   .card img {
     height: 8rem;
   }
+
   .link-item {
     width: 65%;
   }
@@ -245,11 +266,9 @@ background-image:$gradient;
 @media only screen and (max-width: 480px) {
 
   .card {
-
     img {
       height: 6rem;
     }
-
     p {
       display: none;
     }
@@ -258,9 +277,22 @@ background-image:$gradient;
   .link-item {
     width: 90%;
   }
-  
   .hor {
     gap: 0.5rem;
   }
+}
 
+@media only screen and (max-width: 300px) {
+  .menu .hor {
+    flex-direction: column;
+  }
+
+  .card {
+    flex-direction: column;
+    text-align: center;
+    img { 
+      width: 100%;
+      height: auto;
+    }
+  }
 }
