@@ -1,0 +1,159 @@
+// NAVIGATION
+
+nav {
+  position: fixed;
+  width: 100vw;
+  display: flex;
+  justify-items: stretch;
+  background-color: $white;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  border-bottom: 0.5rem solid $black;
+}
+
+.nav-logo {
+  height: 3.5rem;
+  align-content: center;
+}
+
+.nav-items {
+  width: stretch;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  margin: 1rem 20%;
+}
+
+.nav-icons {
+  cursor: pointer;
+}
+
+.menu-icon-hover,
+.nav-icons:hover .menu-icon {
+  display: none;
+  transition: display 0.5s ease;
+}
+
+.nav-icons:hover .menu-icon-hover {
+  display: flex;
+  transition: display 0.5s ease;
+}
+
+
+// TICKER
+
+.ticker-wrap {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  border-bottom: 0.5rem solid $black;
+}
+
+.ticker {
+  display: inline-block;
+  animation: marquee 35s linear infinite;
+}
+
+.item-collection-1 {
+  position: relative;
+  left: 0%;
+  animation: swap 35s linear infinite;
+}
+
+.item {
+  display: inline-block;
+  padding: 0 1rem;
+}
+
+/* Transition */
+@keyframes marquee {
+  0% {
+    transform: translateX(0)
+  }
+
+  100% {
+    transform: translateX(-100%)
+  }
+}
+
+@keyframes swap {
+
+  0%,
+  50% {
+    left: 0%;
+  }
+
+  50.01%,
+  100% {
+    left: 100%;
+  }
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+
+  .nav-items {
+    margin: 1rem 10%;
+  }
+}
+
+@media only screen and (min-width: 2000px) and (max-width: 3999px) {
+
+  nav,
+  .ticker-wrap {
+    border-bottom-width: 1rem;
+  }
+
+  .nav-logo {
+    height: 5rem;
+  }
+
+  .nav-items {
+    margin: 1.5rem 25%;
+  }
+}
+
+@media only screen and (min-width: 4000px) {
+
+  nav {
+    border-bottom-width: 2rem;
+  }
+
+  .ticker-wrap {
+    border-bottom-width: 2rem;
+  }
+
+  .nav-logo {
+    height: 10rem;
+  }
+
+  .menu-icon,
+  .menu-icon-hover {
+    height: 7rem;
+  }
+
+  .nav-items {
+    margin: 2.5rem 25%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+
+  .nav-items {
+    margin: 0.5rem 5%;
+  }
+
+  .nav-logo,
+  .nav-icons {
+    height: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+
+  nav .hor {
+    display: none;
+  }
+}
