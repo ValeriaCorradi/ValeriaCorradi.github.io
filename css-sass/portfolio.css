@@ -171,7 +171,6 @@ footer p {
 
 footer a:hover,
 .footer-link h2:hover,
-.footer-link h3:hover,
 .footer-link h4:hover {
   color: #FFFBF4;
   transition: 0.5s ease;
@@ -196,7 +195,7 @@ nav {
   top: 0;
   left: 0;
   z-index: 1000;
-  border-bottom: 0.5rem solid #1E1e1e;
+  border-bottom: 0.5rem solid #292929;
 }
 
 .nav-logo {
@@ -233,7 +232,7 @@ nav {
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
-  border-bottom: 0.5rem solid #1E1e1e;
+  border-bottom: 0.5rem solid #292929;
 }
 
 .ticker {
@@ -319,7 +318,7 @@ nav {
   }
 }
 * {
-  color: #1E1e1e;
+  color: #292929;
 }
 
 body {
@@ -383,7 +382,7 @@ nav .hor {
 .card {
   padding: 1rem;
   align-items: center;
-  border: 1px solid rgba(30, 30, 30, 0.2);
+  border: 1px solid rgba(41, 41, 41, 0.2);
 }
 .card img {
   height: 10rem;
@@ -402,7 +401,7 @@ nav .hor {
   gap: 1rem;
   align-items: center;
   padding: 0px 24px 2px 16px;
-  background-color: #1E1e1e;
+  background-color: #292929;
   height: 48px;
 }
 .button h5 {
@@ -420,11 +419,11 @@ nav .hor {
 }
 
 .button:hover h5 {
-  color: #1E1e1e;
+  color: #292929;
 }
 
 .button:hover svg {
-  fill: #1E1e1e;
+  fill: #292929;
 }
 
 .link-item {
@@ -454,6 +453,7 @@ nav .hor {
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
+  margin-top: 4%;
 }
 .menu h2 {
   text-align: center;
