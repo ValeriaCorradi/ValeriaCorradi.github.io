@@ -427,6 +427,17 @@ nav .hor {
   fill: #292929;
 }
 
+.chip {
+  background: #61E8AF;
+  padding: 0 2rem;
+  border-radius: 100rem;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.chip h5 {
+  font-weight: bold;
+}
+
 .link-item {
   display: flex;
   flex-direction: row;
