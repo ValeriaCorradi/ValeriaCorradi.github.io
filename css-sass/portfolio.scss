@@ -21,15 +21,26 @@ body,
 .main {
   display: flex;
   flex-direction: column;
-  gap: 120px;
+  gap: 80px;
 }
 
 img {
   max-width: 100%;
+  border-radius: 20px;
 }
 
 .w60 {
-  width:60%
+  width: 60%
+}
+
+.cent {
+  align-items: center;
+  justify-content: center;
+
+  h2,
+  p {
+    text-align: center;
+  }
 }
 
 .hor {
@@ -40,6 +51,20 @@ img {
 
 nav .hor {
   text-align: center;
+}
+
+.spaced {
+  display: flex;
+  justify-content: space-between;
+
+  .paragraph08 {
+    width: 50%;
+  }
+}
+
+hr {
+  border: $border;
+  width: 100%;
 }
 
 .paragraph40 {
@@ -69,15 +94,17 @@ nav .hor {
 .card {
   padding: 1rem;
   align-items: center;
-  border: 1px solid rgba($black, 0.2);
+  border: $border;
+  border-radius: 16px;
+  box-shadow: $shadow;
 
   img {
     height: 10rem;
+    border-radius: 8px;
   }
 }
 
 .card:hover {
-  border-color: $white;
   background-image: $gradient;
   transition: 0.5s ease;
   cursor: pointer;
@@ -88,31 +115,34 @@ nav .hor {
   justify-content: center;
   gap: 1rem;
   align-items: center;
-  padding: 0px 24px 2px 16px;
+  padding-right: 2%;
   background-color: $black;
-  height: 48px;
+  border: $border;
+  border-radius: 100px;
+  height: 42px;
+  min-width: 50%;
 
   h5 {
     color: $white;
   }
-}
 
-.button svg {
-  fill: $white;
+  svg {
+    fill: $white;
+  }
 }
 
 .button:hover {
   background-color: $white;
   background-image: $gradient;
   transition: 0.5s ease;
-}
 
-.button:hover h5 {
-  color: $black;
-}
+  h5 {
+    color: $black;
+  }
 
-.button:hover svg {
-  fill: $black;
+  svg {
+    fill: $black;
+  }
 }
 
 .chip {
@@ -145,7 +175,7 @@ nav .hor {
   flex-direction: column;
   align-content: center;
   justify-content: center;
-  background-image: $gradient;
+  background-image: $gradientfull;
   height: 100vh;
 
   .paragraph40 {
@@ -165,6 +195,7 @@ nav .hor {
 
   .button {
     height: 160px;
+    border: $borderbig;
   }
 
   .download-icon {
@@ -195,9 +226,13 @@ nav .hor {
 
   .card {
     padding: 4rem;
+    border-radius: 48px;
+    border: $borderbig;
+    box-shadow: $shadowbig;
 
     img {
       height: 40rem;
+      border-radius: 24px;
     }
   }
 
@@ -210,6 +245,7 @@ nav .hor {
 @media only screen and (min-width: 2000px) and (max-width: 3999px) {
   .button {
     height: 80px;
+    border: $borderbig;
   }
 
   .download-icon {
@@ -219,7 +255,7 @@ nav .hor {
 
   body,
   .main {
-    gap: 160px;
+    gap: 140px;
   }
 
   .main {
@@ -240,9 +276,13 @@ nav .hor {
 
   .card {
     padding: 2rem;
+    border-radius: 24px;
+    border: $borderbig;
+    box-shadow: $shadowbig;
 
     img {
       height: 14rem;
+      border-radius: 12px;
     }
   }
 
@@ -262,7 +302,7 @@ nav .hor {
 
   body,
   .main {
-    gap: 80px;
+    gap: 64px;
   }
 
   .main {
@@ -280,14 +320,18 @@ nav .hor {
   .w60 {
     width: 100%;
   }
+
+  .button {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 480px) {
-
   .card {
     img {
       height: 6rem;
     }
+
     p {
       display: none;
     }
@@ -296,8 +340,22 @@ nav .hor {
   .link-item {
     width: 90%;
   }
+
   .hor {
     gap: 0.5rem;
+  }
+
+  footer .hor {
+    flex-direction: column;
+  }
+
+  .spaced {
+    flex-direction: column;
+    gap: 20px;
+
+    .paragraph08 {
+      width: 100%;
+    }
   }
 }
 
@@ -309,7 +367,8 @@ nav .hor {
   .card {
     flex-direction: column;
     text-align: center;
-    img { 
+
+    img {
       width: 100%;
       height: auto;
     }

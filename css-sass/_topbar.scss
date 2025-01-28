@@ -4,16 +4,17 @@ nav {
   position: fixed;
   width: 100vw;
   display: flex;
-  justify-items: stretch;
-  background-color: $white;
+  background-color: transparent;
   top: 0;
   left: 0;
   z-index: 1000;
-  border-bottom: 0.5rem solid $black;
+  img {
+    border-radius: 0;
+  }
 }
 
 .nav-logo {
-  height: 3.5rem;
+  height: 2.5rem;
   align-content: center;
 }
 
@@ -23,10 +24,17 @@ nav {
   align-items: center;
   display: flex;
   margin: 1rem 20%;
+  border-radius: 300px;
+  border: $border;
+  background-color: rgba($white, 0.4);
+  backdrop-filter: blur(4rem);
+  padding: 0.5% 5%;
+  box-shadow: $shadow;
 }
 
 .nav-icons {
   cursor: pointer;
+  align-content: center;
 }
 
 .menu-icon-hover,
@@ -47,7 +55,6 @@ nav {
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
-  border-bottom: 0.5rem solid $black;
 }
 
 .ticker {
@@ -107,21 +114,21 @@ nav {
   }
 
   .nav-logo {
-    height: 5rem;
+    height: 4.5rem;
   }
 
   .nav-items {
     margin: 1.5rem 25%;
+    border: $borderbig;
+    box-shadow: $shadowbig;
   }
 }
 
 @media only screen and (min-width: 4000px) {
 
-  nav {
-    border-bottom-width: 2rem;
-  }
-
-  .ticker-wrap {
+  nav,
+  .ticker-wrap
+   {
     border-bottom-width: 2rem;
   }
 
@@ -131,11 +138,13 @@ nav {
 
   .menu-icon,
   .menu-icon-hover {
-    height: 7rem;
+    height: 4rem;
   }
 
   .nav-items {
     margin: 2.5rem 25%;
+    border: $borderbig;
+    box-shadow: $shadowbig;
   }
 }
 
@@ -155,5 +164,9 @@ nav {
 
   nav .hor {
     display: none;
+  }
+
+  .nav-items {
+    margin: 1rem 5%;
   }
 }
