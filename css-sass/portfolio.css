@@ -256,6 +256,7 @@ nav img {
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
+  margin-top: 2%;
 }
 
 .ticker {
@@ -297,10 +298,6 @@ nav img {
   }
 }
 @media only screen and (min-width: 2000px) and (max-width: 3999px) {
-  nav,
-  .ticker-wrap {
-    border-bottom-width: 1rem;
-  }
   .nav-logo {
     height: 4.5rem;
   }
@@ -311,10 +308,6 @@ nav img {
   }
 }
 @media only screen and (min-width: 4000px) {
-  nav,
-  .ticker-wrap {
-    border-bottom-width: 2rem;
-  }
   .nav-logo {
     height: 10rem;
   }
@@ -336,6 +329,9 @@ nav img {
   .nav-icons {
     height: 2.5rem;
   }
+  .ticker-wrap {
+    margin-top: 4%;
+  }
 }
 @media only screen and (max-width: 400px) {
   nav .hor {
@@ -343,6 +339,9 @@ nav img {
   }
   .nav-items {
     margin: 1rem 5%;
+  }
+  .ticker-wrap {
+    margin-top: 6%;
   }
 }
 * {
