@@ -60,6 +60,10 @@ nav .hor {
   .paragraph08 {
     width: 50%;
   }
+
+  img {
+    border-radius: 0;
+  }
 }
 
 hr {
@@ -239,6 +243,10 @@ hr {
   .hor {
     gap: 4rem;
   }
+
+  .spaced img {
+    width: 480px;
+  }
 }
 
 
@@ -288,6 +296,10 @@ hr {
 
   .hor {
     gap: 2rem;
+  }
+
+  .spaced img {
+    width: 240px;
   }
 }
 

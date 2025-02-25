@@ -399,6 +399,9 @@ nav .hor {
 .spaced .paragraph08 {
   width: 50%;
 }
+.spaced img {
+  border-radius: 0;
+}
 
 hr {
   border: 1px solid rgba(41, 41, 41, 0.2);
@@ -560,6 +563,9 @@ hr {
   .hor {
     gap: 4rem;
   }
+  .spaced img {
+    width: 480px;
+  }
 }
 @media only screen and (min-width: 2000px) and (max-width: 3999px) {
   .button {
@@ -598,6 +604,9 @@ hr {
   }
   .hor {
     gap: 2rem;
+  }
+  .spaced img {
+    width: 240px;
   }
 }
 @media only screen and (max-width: 1024px) {
