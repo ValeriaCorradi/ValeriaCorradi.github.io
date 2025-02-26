@@ -26,7 +26,7 @@ body,
 
 img {
   max-width: 100%;
-  border-radius: 20px;
+  border-radius: 16px;
 }
 
 .w60 {
@@ -168,6 +168,7 @@ hr {
   padding: 1rem;
   width: 50%;
   cursor: pointer;
+  border-radius: 16px;
 }
 
 .link-item:hover {
@@ -228,6 +229,11 @@ hr {
     gap: 2rem;
   }
 
+  img,
+  .link-item {
+    border-radius: 48px;
+  }
+
   .card {
     padding: 4rem;
     border-radius: 48px;
@@ -280,6 +286,11 @@ hr {
 
   .paragraph08 {
     gap: 1rem;
+  }
+
+  img,
+  .link-item {
+    border-radius: 24px;
   }
 
   .card {
