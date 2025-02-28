@@ -21,8 +21,8 @@ h3 {
 }
 
 h1 {
-  font-size: 120px;
-  line-height: 120px;
+  font-size: 140px;
+  line-height: 140px;
 }
 
 h2 {
@@ -68,8 +68,8 @@ ul {
 
 @media only screen and (min-width: 4000px) {
   h1 {
-    font-size: 300px;
-    line-height: 300px;
+    font-size: 440px;
+    line-height: 440px;
   }
   h2 {
     font-size: 220px;
@@ -95,8 +95,8 @@ ul {
 }
 @media only screen and (min-width: 2000px) and (max-width: 3999px) {
   h1 {
-    font-size: 160px;
-    line-height: 160px;
+    font-size: 200px;
+    line-height: 200px;
   }
   h2 {
     font-size: 80px;
@@ -122,8 +122,8 @@ ul {
 }
 @media only screen and (max-width: 1024px) {
   h1 {
-    font-size: 64px;
-    line-height: 64px;
+    font-size: 80px;
+    line-height: 80px;
   }
   h2 {
     font-size: 40px;
@@ -158,14 +158,15 @@ ul {
   }
 }
 @media only screen and (max-width: 400px) {
-  h1 {
-    font-size: 52px;
-    line-height: 52px;
-  }
-  h2 {
-    font-size: 40px;
-    line-height: 40px;
-  }
+  /*   h1 {
+      font-size: 80px;
+      line-height: 80px;
+    }
+
+    h2 {
+      font-size: 40px;
+      line-height: 40px;
+    } */
   h3 {
     font-size: 24px;
     line-height: 24px;
@@ -256,7 +257,6 @@ nav img {
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
-  margin-top: 2%;
 }
 
 .ticker {
@@ -340,9 +340,6 @@ nav img {
   .nav-items {
     margin: 1rem 5%;
   }
-  .ticker-wrap {
-    margin-top: 6%;
-  }
 }
 * {
   color: #292929;
@@ -350,7 +347,7 @@ nav img {
 
 body {
   background-color: #FFFBF4;
-  margin: 0;
+  margin: 2% 0 0 0;
 }
 
 .main {
@@ -535,12 +532,12 @@ hr {
     width: 64px;
     height: 64px;
   }
-  body,
-  .main {
+  body {
     gap: 280px;
   }
   .main {
     margin: 0 25%;
+    gap: 280px;
   }
   .paragraph40 {
     gap: 10rem;
@@ -584,12 +581,12 @@ hr {
     width: 32px;
     height: 32px;
   }
-  body,
-  .main {
+  body {
     gap: 140px;
   }
   .main {
     margin: 0 25%;
+    gap: 140px;
   }
   .paragraph40 {
     gap: 5rem;
@@ -625,14 +622,17 @@ hr {
   .main {
     margin: 0 10%;
   }
+  body {
+    margin-top: 0;
+  }
 }
 @media only screen and (max-width: 700px) {
-  body,
-  .main {
+  body {
     gap: 64px;
   }
   .main {
     margin: 0 5%;
+    gap: 64px;
   }
   .card img {
     height: 8rem;
@@ -648,6 +648,13 @@ hr {
   }
 }
 @media only screen and (max-width: 480px) {
+  body {
+    margin-top: 5%;
+  }
+  body,
+  .main {
+    gap: 40px;
+  }
   .card img {
     height: 6rem;
   }

@@ -10,7 +10,7 @@
 
 body {
   background-color: $white;
-  margin: 0;
+  margin: 2% 0 0 0;
 }
 
 .main {
@@ -197,7 +197,6 @@ hr {
 }
 
 @media only screen and (min-width: 4000px) {
-
   .button {
     height: 160px;
     border: $borderbig;
@@ -208,13 +207,13 @@ hr {
     height: 64px;
   }
 
-  body,
-  .main {
+  body {
     gap: 280px;
   }
 
   .main {
     margin: 0 25%;
+    gap: 280px;
   }
 
   .paragraph40 {
@@ -271,13 +270,13 @@ hr {
     height: 32px;
   }
 
-  body,
-  .main {
+  body {
     gap: 140px;
   }
 
   .main {
     margin: 0 25%;
+    gap: 140px;
   }
 
   .paragraph40 {
@@ -318,22 +317,25 @@ hr {
   }
 }
 
-
 @media only screen and (max-width: 1024px) {
   .main {
     margin: 0 10%;
+  }
+
+  body {
+    margin-top: 0;
   }
 }
 
 @media only screen and (max-width: 700px) {
 
-  body,
-  .main {
+  body {
     gap: 64px;
   }
 
   .main {
     margin: 0 5%;
+    gap: 64px;
   }
 
   .card img {
@@ -354,6 +356,16 @@ hr {
 }
 
 @media only screen and (max-width: 480px) {
+
+body {
+  margin-top: 5%;
+}
+
+  body,
+  .main {
+    gap: 40px;
+  }
+
   .card {
     img {
       height: 6rem;
