@@ -527,6 +527,22 @@ hr {
   text-align: center;
 }
 
+.avatar {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar-img {
+  border-radius: 0;
+  height: 4rem;
+}
+
+.quote {
+  border-radius: 0;
+}
+
 @media only screen and (min-width: 4000px) {
   .button {
     height: 160px;
@@ -575,6 +591,15 @@ hr {
   .spaced img {
     width: 480px;
   }
+  .quote {
+    height: 10rem;
+  }
+  .avatar {
+    gap: 2rem;
+  }
+  .avatar-img {
+    height: 12rem;
+  }
 }
 @media only screen and (min-width: 2000px) and (max-width: 3999px) {
   .button {
@@ -620,6 +645,9 @@ hr {
   }
   .spaced img {
     width: 240px;
+  }
+  .avatar-img {
+    height: 6rem;
   }
 }
 @media only screen and (max-width: 1024px) {
@@ -680,6 +708,9 @@ hr {
   }
   .spaced .paragraph08 {
     width: 100%;
+  }
+  .quote {
+    height: 2rem;
   }
 }
 @media only screen and (max-width: 300px) {
