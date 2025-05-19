@@ -402,10 +402,6 @@ img {
   flex-wrap: wrap;
 }
 
-.gapsmall {
-  gap: 3%;
-}
-
 nav .hor {
   text-align: center;
 }
@@ -457,6 +453,11 @@ hr {
   border: 1px solid rgba(41, 41, 41, 0.2);
   border-radius: 16px;
   box-shadow: 2px 2px 4px rgba(41, 41, 41, 0.1);
+}
+
+.datacontainer {
+  min-width: -moz-fit-content;
+  min-width: fit-content;
 }
 
 .card img {
@@ -608,9 +609,6 @@ hr {
   .hor {
     gap: 4rem;
   }
-  .gapsmall {
-    gap: 3%;
-  }
   .spaced img {
     width: 480px;
   }
@@ -667,9 +665,6 @@ hr {
   .hor {
     gap: 2rem;
   }
-  .gapsmall {
-    gap: 3%;
-  }
   .spaced img {
     width: 240px;
   }
@@ -725,9 +720,6 @@ hr {
   }
   .hor {
     gap: 0.5rem;
-  }
-  .gapsmall {
-    gap: 3%;
   }
   footer .hor {
     flex-direction: column;

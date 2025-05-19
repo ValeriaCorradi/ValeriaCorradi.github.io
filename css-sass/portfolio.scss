@@ -58,10 +58,6 @@ img {
   flex-wrap: wrap;
 }
 
-.gapsmall {
-  gap: 3%;
-}
-
 nav .hor {
   text-align: center;
 }
@@ -115,6 +111,10 @@ hr {
   border: $border;
   border-radius: 16px;
   box-shadow: $shadow;
+}
+
+.datacontainer {
+  min-width:fit-content;
 }
 
 .card img {
@@ -284,10 +284,6 @@ hr {
     gap: 4rem;
   }
 
-  .gapsmall {
-    gap: 3%;
-  }
-
   .spaced img {
     width: 480px;
   }
@@ -357,10 +353,6 @@ hr {
 
   .hor {
     gap: 2rem;
-  }
-
-  .gapsmall {
-    gap: 3%;
   }
 
   .spaced img {
@@ -437,10 +429,6 @@ hr {
 
   .hor {
     gap: 0.5rem;
-  }
-
-  .gapsmall {
-    gap: 3%;
   }
 
   footer .hor {
