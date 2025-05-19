@@ -66,6 +66,14 @@ ul {
   margin: 0;
 }
 
+.green {
+  color: #15803d;
+}
+
+.red {
+  color: #B91C1C;
+}
+
 @media only screen and (min-width: 4000px) {
   h1 {
     font-size: 440px;
@@ -390,6 +398,14 @@ img {
   align-items: center;
 }
 
+.wrap {
+  flex-wrap: wrap;
+}
+
+.gapsmall {
+  gap: 3%;
+}
+
 nav .hor {
   text-align: center;
 }
@@ -434,6 +450,7 @@ hr {
   gap: 0;
 }
 
+.datacontainer,
 .card {
   padding: 1rem;
   align-items: center;
@@ -441,6 +458,7 @@ hr {
   border-radius: 16px;
   box-shadow: 2px 2px 4px rgba(41, 41, 41, 0.1);
 }
+
 .card img {
   height: 10rem;
   border-radius: 8px;
@@ -576,6 +594,7 @@ hr {
   .link-item {
     padding: 4rem;
   }
+  .datacontainer,
   .card {
     padding: 4rem;
     border-radius: 48px;
@@ -588,6 +607,9 @@ hr {
   }
   .hor {
     gap: 4rem;
+  }
+  .gapsmall {
+    gap: 3%;
   }
   .spaced img {
     width: 480px;
@@ -631,6 +653,7 @@ hr {
   .link-item {
     border-radius: 24px;
   }
+  .datacontainer,
   .card {
     padding: 2rem;
     border-radius: 24px;
@@ -643,6 +666,9 @@ hr {
   }
   .hor {
     gap: 2rem;
+  }
+  .gapsmall {
+    gap: 3%;
   }
   .spaced img {
     width: 240px;
@@ -699,6 +725,9 @@ hr {
   }
   .hor {
     gap: 0.5rem;
+  }
+  .gapsmall {
+    gap: 3%;
   }
   footer .hor {
     flex-direction: column;

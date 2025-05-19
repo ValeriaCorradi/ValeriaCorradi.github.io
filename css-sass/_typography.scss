@@ -65,6 +65,14 @@ ul {
   margin: 0;
 }
 
+.green {
+  color: $green;
+}
+
+.red {
+  color: $red;
+}
+
 
 @media only screen and (min-width: 4000px) {
   h1 {

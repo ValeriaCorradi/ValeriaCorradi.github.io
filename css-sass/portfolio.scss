@@ -54,6 +54,14 @@ img {
   align-items: center;
 }
 
+.wrap {
+  flex-wrap: wrap;
+}
+
+.gapsmall {
+  gap: 3%;
+}
+
 nav .hor {
   text-align: center;
 }
@@ -100,17 +108,18 @@ hr {
   gap: 0;
 }
 
+.datacontainer,
 .card {
   padding: 1rem;
   align-items: center;
   border: $border;
   border-radius: 16px;
   box-shadow: $shadow;
+}
 
-  img {
-    height: 10rem;
-    border-radius: 8px;
-  }
+.card img {
+  height: 10rem;
+  border-radius: 8px;
 }
 
 .card:hover {
@@ -258,20 +267,25 @@ hr {
     padding: 4rem;
   }
 
+  .datacontainer,
   .card {
     padding: 4rem;
     border-radius: 48px;
     border: $borderbig;
     box-shadow: $shadowbig;
+  }
 
-    img {
-      height: 40rem;
-      border-radius: 24px;
-    }
+  .card img {
+    height: 40rem;
+    border-radius: 24px;
   }
 
   .hor {
     gap: 4rem;
+  }
+
+  .gapsmall {
+    gap: 3%;
   }
 
   .spaced img {
@@ -290,7 +304,6 @@ hr {
     height: 12rem;
   }
 }
-
 
 @media only screen and (min-width: 2000px) and (max-width: 3999px) {
   .button {
@@ -329,20 +342,25 @@ hr {
     border-radius: 24px;
   }
 
+  .datacontainer,
   .card {
     padding: 2rem;
     border-radius: 24px;
     border: $borderbig;
     box-shadow: $shadowbig;
+  }
 
-    img {
-      height: 14rem;
-      border-radius: 12px;
-    }
+  .card img {
+    height: 14rem;
+    border-radius: 12px;
   }
 
   .hor {
     gap: 2rem;
+  }
+
+  .gapsmall {
+    gap: 3%;
   }
 
   .spaced img {
@@ -419,6 +437,10 @@ hr {
 
   .hor {
     gap: 0.5rem;
+  }
+
+  .gapsmall {
+    gap: 3%;
   }
 
   footer .hor {
